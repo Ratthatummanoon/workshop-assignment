@@ -1,0 +1,132 @@
+/* Font and Reset */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    background-image: url("../img/tu-dome.png");
+    background-size: 150% 100%;
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Afacad Flux';
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+.header-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.header-container .logo img {
+    margin-bottom: 20px;
+}
+
+.form-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Container and Layout */
+.container {
+    text-align: center;
+    width: 360px;
+    margin: auto;
+}
+.octa {
+    background-color: none;
+}
+.meta {
+    padding: 30px;
+    background-color: #F6EFBDEE ;
+    border-radius: 10px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0);
+}
+.login-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Form and Input Groups */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px; /* Rounded corners */
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-family: 'TH Sarabun', sans-serif;
+    margin-top: 5px;
+}
+
+/* Password Eye Icon */
+.password-container {
+    position: relative;
+}
+#password, #username, #role {
+    font-family: 'Afacad Flux';
+    font-size: 20px;
+}
+.password-container i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Reset Password */
+.reset-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.reset-password a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #C4D7FF; /* Button background color */
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'TH Sarabun', sans-serif;
+    margin-top: 20px;
+}
+
+.login-btn:hover {
+    background-color: #a3bbf2; /* Lighter hover effect */
+}
