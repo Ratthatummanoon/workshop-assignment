@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thammasat University Login Page</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="octa">
+            <div class="header-container">
+                <div class="logo">
+                <img src="img/tu-logo.png" width="180px" alt="Thammasat University Logo">
+                </div>
+            </div>
+        </div>
+        <div class="meta">
+            <h3 class="login-title">LOGIN</h3>
+            <form class="login-form">
+                <!-- Username Input -->
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" required>
+                </div>
+
+                <!-- Password Input -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Enter Password" required>
+                        <i class="fas fa-eye-slash" id="togglePassword"></i>
+                    </div>
+                </div>
+
+                <!-- Role Dropdown -->
+                <div class="input-group">
+                    <label for="role">Role</label>
+                    <select id="role" required>
+                        <option value="" disabled selected>Select Your Role</option>
+                        <option value="student">Student</option>
+                        <option value="lecturer">Lecturer</option>
+                    </select>
+                </div>
+
+                <!-- Reset Password Link -->
+                <div class="reset-password">
+                    <a href="#">Reset Password</a>
+                </div>
+
+                <!-- Login Button -->
+                <button type="button" onclick="submitLogin()" class="login-btn">LOGIN</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
